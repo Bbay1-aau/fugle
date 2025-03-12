@@ -1,49 +1,60 @@
-/* 📸 Fancy Galleri Layout */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+/* 🌟 Fancy Forside Box */
+.container {
+    width: 80%;
+    max-width: 700px;
     padding: 30px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* 🖼️ Boks med skyggeeffekt til hvert billede */
-.bird {
-    background: linear-gradient(145deg, #ff6a00, #ff4b1f);
-    padding: 20px;
-    border-radius: 15px;
     text-align: center;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 280px; /* Ensartet størrelse på alle bokse */
-}
-
-/* 🖼️ Ensartede billeder med flot beskæring */
-.bird img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* ✨ Hover-effekt (løft billede op) */
-.bird:hover {
-    transform: translateY(-5px);
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.4);
-}
-
-/* 🏷️ Fuglenavne styling */
-.bird-name {
-    font-size: 18px;
+    margin: 50px auto;
+    background: linear-gradient(145deg, #ff9a8b, #ff6a00);
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    color: white;
     font-weight: bold;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.7);
-    display: inline-block;
+}
+
+/* 🌟 Navigation Styling */
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
     padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
-    margin-top: 12px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* 📌 Centreret elementer */
+.container h1 {
+    font-size: 32px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    font-size: 18px;
+}
+
+/* 🔘 Knappen bliver fancy */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff3c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: #ff1a00;
+    transform: scale(1.05);
 }
