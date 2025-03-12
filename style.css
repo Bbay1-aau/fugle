@@ -1,4 +1,4 @@
-/* Generelt layout */
+/* 🎨 Fancy baggrund */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
@@ -7,80 +7,47 @@ body {
     padding: 0;
 }
 
-/* 🎨 Forside-styling (Centreret boks) */
-.container {
-    width: 80%;
-    max-width: 700px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-    margin: auto;
-    text-align: center;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* 🖼 Galleri (Grid layout) */
+/* 🖼 Galleri grid layout */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
-    justify-content: center;
 }
 
-/* 📷 Fuglebilleder - Ensartet og pænt */
+/* 📸 Ensartede billeder */
 .bird {
     background: rgba(255, 255, 255, 0.2);
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    width: 280px;
 }
 
 .bird img {
-    width: 300px; /* Ensartet bredde */
-    height: 300px; /* Ensartet højde */
-    object-fit: cover; /* Bevarer proportioner og beskærer pænt */
-    border-radius: 10px; /* Blødere kanter */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid white;
+    transition: transform 0.3s;
 }
 
-/* Fuglenavne (store og tydelige) */
+/* Hover-effekt på billeder */
+.bird img:hover {
+    transform: scale(1.1);
+}
+
+/* 🐦 Fuglenavne */
 .bird-name {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
     margin-top: 10px;
-}
-
-/* 🔹 Navigation links (større, uden understregning) */
-.nav-link {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.nav-link:hover {
-    color: #ff3c00;
-}
-
-/* 🔙 Tilbage-knap */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #ff3c00;
-    color: white;
-    text-decoration: none;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
     border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ff1a00;
+    display: inline-block;
 }
