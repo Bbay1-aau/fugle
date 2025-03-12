@@ -1,60 +1,121 @@
-/* 🌟 Fancy Forside Box */
+/* 🎨 Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62); /* Fancy baggrund */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔷 Fancy Container med Skygge */
+.box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* 🏠 Forside Styling */
 .container {
     width: 80%;
     max-width: 700px;
     padding: 30px;
     text-align: center;
     margin: 50px auto;
-    background: linear-gradient(145deg, #ff9a8b, #ff6a00);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-    color: white;
-    font-weight: bold;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* 🌟 Navigation Styling */
-.nav-link {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    padding: 8px 15px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    display: inline-block;
+/* 📸 Galleri Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* 🖼 Fancy billeder med bokse */
+.bird {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* 🖼 Ens billeder (samme størrelse) */
+.bird img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-.nav-link:hover {
-    background: rgba(255, 255, 255, 0.4);
+/* 🎭 Galleri Murstens-Layout */
+.bird:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+.bird:nth-child(even) {
+    transform: rotate(2deg);
 }
 
-/* 📌 Centreret elementer */
-.container h1 {
-    font-size: 32px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+/* 🎨 Hover-effekt */
+.bird img:hover {
+    transform: scale(1.05);
 }
 
-.container p {
-    font-size: 18px;
+/* ✨ Fuglenavne */
+.bird-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
 }
 
-/* 🔘 Knappen bliver fancy */
+/* 🏡 Om Fuglene - Fancy sektioner */
+.fact-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* 🏡 Fancy Bølge-effekt */
+.fact-box:nth-child(even) {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* 🔙 Tilbage-knap */
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 10px 20px;
     background: #ff3c00;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    border-radius: 5px;
     transition: 0.3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
     background: #ff1a00;
-    transform: scale(1.05);
+}
+
+/* 🌈 Fancy Baggrund */
+.fancy-bg {
+    background: url('https://source.unsplash.com/1600x900/?nature,birds') no-repeat center center/cover;
+    padding: 50px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
