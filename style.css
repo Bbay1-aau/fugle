@@ -1,58 +1,56 @@
-/* 📸 Galleri Styling */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.bird {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 200px;
-}
-
-.bird img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid white;
-}
-
-.bird-name {
-    display: block;
-    margin-top: 10px;
-    padding: 5px;
-    border: none;
-    text-align: center;
-    background: white;
-    color: black;
+/* 📌 Opdatering af overskrifter */
+h1, h2 {
+    color: black; /* Sort tekst */
+    font-size: 2rem; /* Større tekst */
     font-weight: bold;
+    text-transform: uppercase; /* Gør teksten til store bogstaver */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 🟧 Stil for dine informationsbokse */
+.info-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* ✅ Ikon-baserede listepunkter */
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.info-box ul li::before {
+    content: "✅"; /* Grøn checkmark */
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* 🔥 Opdateret styling til "Undgå" tekst */
+.warning-text {
+    font-weight: bold;
+    color: red;
+    background: yellow;
+    padding: 3px 6px;
     border-radius: 5px;
-    transition: 0.3s;
 }
 
-.bird-name:focus {
-    background: #ffcc70;
-    outline: none;
-}
-
-/* 🔙 Tilbage-knap */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #ff3c00;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ff1a00;
+/* 🌟 Større mellemrum mellem sektioner */
+.section {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
