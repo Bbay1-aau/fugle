@@ -1,36 +1,24 @@
-/* 🎨 Generel styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff9966, #ff5e62);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* 📌 Fancy container med skygge til alt */
-.box {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-}
-
-/* 🏠 Forside styling */
-.container {
-    width: 80%;
-    max-width: 700px;
+/* 📸 Galleri styling - Fancy layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Gør det responsivt */
+    gap: 20px;
     padding: 30px;
-    text-align: center;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
 }
 
+/* 🖼️ Fancy billedbokse */
+.bird {
+    background: rgba(255, 255, 255, 0.2); /* Let gennemsigtig baggrund */
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Dybere skygge */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
-
-/* 🎭 Murstens-layout for billeder */
+/* 🔄 Murstenslayout med forskellig højde */
 .bird:nth-child(odd) {
     transform: rotate(-2deg);
 }
@@ -38,101 +26,29 @@ body {
     transform: rotate(2deg);
 }
 
-/* 🖼 Ens billeder (samme størrelse) */
+/* 🖼️ Ensartet billedestørrelse og hover-effekt */
 .bird img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* 🎨 Fancy hover-effekt */
-.bird img:hover {
+/* 🖱️ Fancy hover-effekt */
+.bird:hover {
     transform: scale(1.05);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* ✨ Fuglenavne - større og tydeligere */
+/* ✨ Fuglenavne - Større, tydeligere og centralt placeret */
 .bird-name {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-}
-
-/* 🏡 Om fuglene - Fancy bokse til facts */
-.fact-box {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-}
-
-/* 🔙 Tilbage-knap */
-.btn {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #ff3c00;
-    color: white;
-    text-decoration: none;
+    padding: 5px 10px;
     border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ff1a00;
-}
-/* 📸 Fancy Galleri med flot layout */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Gør det responsivt */
-    gap: 25px;
-    padding: 30px;
-    justify-content: center;
-}
-
-/* 🖼 Fancy bokse til hver fugl */
-.bird {
-    background: rgba(255, 255, 255, 0.2); /* Let gennemsigtig boks */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Skyggeeffekt */
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* 🎭 Forskellige vinkler for et dynamisk look */
-.bird:nth-child(odd) {
-    transform: rotate(-2deg);
-}
-.bird:nth-child(even) {
-    transform: rotate(2deg);
-}
-
-/* 🖼 Ens billeder (samme størrelse) */
-.bird img {
-    width: 260px;  /* Ensartet bredde */
-    height: 260px; /* Ensartet højde */
-    object-fit: cover; /* Beskær billedet for at passe */
-    border-radius: 10px; /* Afrundede kanter */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover-effekt (for at gøre det mere fancy) */
-.bird img:hover {
-    transform: scale(1.08);
-}
-
-/* ✨ Fuglenavne - større og tydeligere */
-.bird-name {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
     margin-top: 10px;
 }
-
