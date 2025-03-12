@@ -7,16 +7,20 @@ body {
     padding: 0;
 }
 
-/* 🎨 Forside-styling */
+/* 🎨 Forside-styling (Centreret boks) */
 .container {
     width: 80%;
     max-width: 700px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 15px;
     margin: auto;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* 🖼 Galleri (Grid layout) */
@@ -47,6 +51,27 @@ body {
 /* Hover-effekt på billeder */
 .bird img:hover {
     transform: scale(1.1);
+}
+
+/* Fuglenavne (store og tydelige) */
+.bird-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* 🔹 Navigation links (større, uden understregning) */
+.nav-link {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.nav-link:hover {
+    color: #ff3c00;
 }
 
 /* 🔙 Tilbage-knap */
