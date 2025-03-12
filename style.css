@@ -103,9 +103,12 @@ body {
 .btn:hover {
     background: #ff1a00;
 }
+
+/* 📸 Fjerner hvid baggrund på billeder */
 .bird img {
-    mix-blend-mode: multiply; /* Fjerner hvide baggrunde fra billeder */
+    mix-blend-mode: multiply; 
 }
+
 /* 📸 Masonry layout for galleri */
 .gallery {
     display: flex;
@@ -117,6 +120,7 @@ body {
 .bird {
     width: 260px; /* Gør alle bokse lige store */
 }
+
 /* 📸 Galleri styling */
 .gallery {
     display: grid;
@@ -128,24 +132,24 @@ body {
 
 /* 🖼️ Ensartet billedestørrelse */
 .bird img {
-    width: 250px;  /* Ensartet bredde */
-    height: 250px; /* Ensartet højde */
-    object-fit: cover; /* Beskær billedet for at passe */
-    border-radius: 10px; /* Afrundede kanter */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover-effekt (for at gøre det mere fancy) */
+/* Hover-effekt */
 .bird img:hover {
     transform: scale(1.05);
 }
 
 /* 🎨 Fancy bokse bag billederne */
 .bird {
-    background: rgba(255, 255, 255, 0.15); /* Let gennemsigtig boks */
+    background: rgba(255, 255, 255, 0.15);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Skyggeeffekt */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
